@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная работа: Все способы CSS</title>
+
+    <style>
+        @import url('task1_4.css');
+        
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Roboto', sans-serif;
+            padding: 50px;
+        }
+        .my-block {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="task1_4.css">
+</head>
+<body>
+
+    <div class="my-block">
+        <h1>Способы подключения стилей</h1>
+        <p>Этот блок оформлен через <b>Внедренные стили</b> в голове документа.</p>
+
+        <p style="color: blue; font-weight: bold; border: 1px solid blue; padding: 10px;">
+            А этот конкретный абзац оформлен через <b>атрибут style</b> прямо в коде.
+        </p>
+    </div>
+
+</body>
+</html>

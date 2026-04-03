@@ -1,0 +1,77 @@
+/* Базовые стили по тегу (Задание 2) */
+body, h1, p, ul, li, a {
+    font-family: sans-serif;
+}
+
+ul { padding: 0; }
+a { text-decoration: none; }
+
+/* Стилизация по классам (Задание 2) */
+.profile {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    flex-direction: column;
+    position: relative; /* Для псевдоэлементов */
+}
+
+.username { color: #333; }
+.description { font-size: 14px; }
+
+/* Селектор по атрибуту (Задание 2) */
+a[target="_blank"] {
+    color: blue;
+}
+
+/* Дочерний селектор (Задание 2) */
+.contacts > li {
+    list-style: none;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+/* Псевдокласс :nth-child() (Задание 3.2) */
+.contacts li:nth-child(even) {
+    background-color: #e2e2e2; /* Другой фон для четных */
+}
+
+/* Псевдокласс :hover для кнопки (Задание 3.3) */
+.add-friend {
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #ddd;
+    border: 1px solid #999;
+}
+
+.add-friend:hover {
+    background-color: #f1c40f; /* Меняет цвет при наведении */
+}
+
+/* Увеличение аватара (Задание 3.1) */
+.user-avatar {
+    width: 100px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.user-avatar:hover {
+    transform: scale(1.1); /* Слегка увеличивается */
+}
+
+/* Псевдоэлементы ::before и ::after (Задание 2) */
+.profile::before {
+    content: "Информация";
+    display: block;  
+    font-size: 10px;
+    color: #aaa;
+}
+
+.profile::after {
+    content: "Конец";
+    display: block;
+    font-size: 10px;
+    color: #aaa;
+    margin-top: 10px;
+}
