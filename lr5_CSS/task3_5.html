@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Демонстрация div и span</title>
+    <style>
+
+        .block-example {
+            background-color: #f0f0f0;
+            border: 2px solid #333;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        .highlight {
+            color: red;
+            font-weight: bold;
+            background-color: yellow;
+            padding: 2px 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Разница между div и span</h1>
+
+    <div class="block-example">
+        <h3>Это блок внутри тега DIV</h3>
+        <p>Фон растянулся на всю ширину страницы. 
+        DIV нужен для логических разделов сайта.</p>
+    </div>
+
+    <div class="block-example">
+        <h3>Еще один DIV</h3>
+        <p>Каждый новый DIV начинается с 
+        <span class="highlight">новой строки</span>, даже если места рядом достаточно.</p>
+        
+        <p>В этом предложении слово <span class="highlight">"ВЫДЕЛЕНО"</span> с помощью тега SPAN. 
+        SPAN мега крут, поэтому не разрывает строку, а встраивается прямо в текст для стилизации отдельных фрагментов.</p>
+    </div>
+
+</body>
+</html>
