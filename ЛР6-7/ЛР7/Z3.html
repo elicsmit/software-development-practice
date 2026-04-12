@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @keyframes changeBackgroundColor {
+            0% {
+                top: 0px;
+                background-color: orange;
+            }
+
+            25% {
+                top: 200px;
+                background-color: red;
+            }
+
+            75% {
+                top: 100px;
+            }
+
+            100% {
+                top: 0px;
+                background-color: black;
+            }
+        }
+
+      div {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  border-radius: 50%;
+  position: relative;
+  animation-name: changeBackgroundColor;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

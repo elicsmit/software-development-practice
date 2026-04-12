@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио фотографа</title>
+<link rel="stylesheet" href="Style.css">
+</head>
+
+
+<body>
+
+    <header>
+        <article class="container header-content">
+            <article class="logo">ФотоМастер</article>
+            <nav>
+                <a href="#hero">Главная</a>
+                <a href="#about">Обо мне</a>
+                <a href="#portfolio">Портфолио</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+        </article>
+    </header>
+
+    <section id="hero" class="hero">
+        <article class="container hero-content" style="display: flex; flex-wrap: wrap;">
+            <article class="hero-text">
+                <h1>Привет, я фотограф!</h1>
+                <p>Сохраняю ваши лучшие моменты на долгие годы.</p>
+                <a href="#portfolio" class="hero-btn">Посмотреть работы</a>
+            </article>
+            <article class="hero-img">
+                <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1000&auto=format&fit=crop" alt="Фотоаппарат">
+            </article>
+        </article>
+    </section>
+
+    <section id="about" class="about">
+        <article class="container">
+            <h2>Обо мне</h2>
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop alt="Мое фото">
+            <p>Я занимаюсь профессиональной фотографией уже более 5 лет. Люблю природу, портреты и репортажную съемку.
+            </p>
+        </article>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <article class="container">
+            <h2>Портфолио</h2>
+            <article class="gallery">
+                <article class="card"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=600&h=400&auto=format&fit=crop" alt="Работа 1">
+                    <p>Свадьба</p>
+                </article>
+                <article class="card"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&h=400&auto=format&fit=crop" alt="Работа 2">
+                    <p>Портрет</p>
+                </article>
+                <article class="card"><img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=600&h=400&auto=format&fit=crop" alt="Работа 3">
+                    <p>Природа</p>
+                </article>
+                <article class="card"><img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=600&h=400&auto=format&fit=crop" alt="Работа 4">
+                    <p>Студия</p>
+                </article>
+                <article class="card"><img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=600&h=400&auto=format&fit=crop" alt="Работа 5">
+                    <p>Репортаж</p>
+                </article>
+                <article class="card"><img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=600&h=400&auto=format&fit=crop" alt="Работа 6">
+                    <p>Семья</p>
+                </article>
+            </article>
+        </article>
+    </section>
+
+    <section id="contact" class="contact">
+        <article class="container">
+            <h2>Связаться со мной</h2>
+            <form action="#">
+                <input type="text" placeholder="Ваше Имя" required>
+                <input type="email" placeholder="Ваш Email" required>
+                <textarea rows="5" placeholder="Сообщение" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </article>
+    </section>
+
+    <footer>
+        <article class="container">
+            <p>Контакты: email@example.com | +123456789</p>
+            <p>Соцсети: VK | Inst</p>
+        </article>
+    </footer>
+
+</body>
+
+</html>
